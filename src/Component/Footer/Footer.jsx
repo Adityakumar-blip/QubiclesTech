@@ -4,6 +4,7 @@ import { FaLinkedin} from 'react-icons/fa';
 import { FaInstagramSquare} from 'react-icons/fa';
 import { FaTwitter} from 'react-icons/fa';
 import { RiCopyrightFill} from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -30,8 +31,8 @@ const Footer = () => {
             <p><RiCopyrightFill/>2022</p>
             </div>
             <div className="footer-social">
-                <FaLinkedin/>
-            <FaInstagramSquare/>
+                <a href='https://www.linkedin.com/company/qubicles-technologies'><FaLinkedin/></a>
+            <a to="https://instagram.com/qubicles_?igshid=YmMyMTA2M2Y="><FaInstagramSquare/></a>
             <FaTwitter/>
             </div>
         </div>
@@ -40,9 +41,9 @@ const Footer = () => {
         <div className="footer-image-container">
           <div className="footer-image">
             <h1>Believe In Us</h1>
-            <button type="button" class="footer-button btn btn-outline-primary">
+            <a href='https://wa.me/917291921804?text=Hii Qubicles'><button type="button" class="footer-button btn btn-outline-primary">
                   Contact us
-                </button>
+                </button></a>
           </div>
         </div>
     </div>

@@ -21,8 +21,9 @@ label.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 3rem;
     font-weight: bold;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 
@@ -35,6 +36,7 @@ nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 nav ul li a{
@@ -43,11 +45,14 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 a.active, a:hover{
     background:#6423a5;
     transition: 0.5s;
+    text-decoration: none;
+    color: white;
 }
 
 .checkbtn{

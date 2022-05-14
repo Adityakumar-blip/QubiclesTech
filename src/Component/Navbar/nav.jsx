@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './nav.css'
 
 const nav = () => {
@@ -11,11 +12,11 @@ const nav = () => {
         </label>
       <label class="logo">Qubicles</label>
       <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><Link  to="/">Home</Link></li>
+        <li><Link to="/service">Services</Link></li>
+        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li><Link to="/team">Team</Link></li>
+        <li><a href="https://wa.me/917291921804?text=Hii Qubicles ">Contact</a></li>
       </ul>
     </nav>
 

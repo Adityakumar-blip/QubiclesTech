@@ -4,16 +4,25 @@ import Nav from './Component/Navbar/nav';
 import Built from './Component/Built/built';
 import Start from './Component/Start/Start.jsx'
 import Footer from './Component/Footer/Footer.jsx'
-import Card from './Component/Card/Card.jsx'
+import Services from './Component/Services/Services';
+import Portfolio from './Component/Portfolio/Portfolio';
+import Team from './Component/Team/Team';
+
+import {BrowserRouter as   Router, Route , Routes} from 'react-router-dom'
 
 function App() {
   return (
    <>
+   <Router>
    <Nav/>
-   <Built/>
-   <Start/>
-   <Card/>
+   <Routes>
+   <Route path='/' element={<Built/>} />
+   <Route path='/service' element={<Services/>} />
+   <Route path='/portfolio' element={<Portfolio/>} />
+   <Route path='/team' element={<Team/>}  />
+   </Routes>
    <Footer/>
+   </Router>
    </>
   );
 }

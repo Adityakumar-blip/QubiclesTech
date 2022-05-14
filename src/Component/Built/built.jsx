@@ -1,6 +1,10 @@
 import React from "react";
 import "./built.css";
 
+import Start from "../Start/Start";
+import Card from '../Card/Card';
+import Work from '../Work/Work';
+
 const built = () => {
   return (
     <>
@@ -27,9 +31,9 @@ const built = () => {
                 </p>
               </div>
               <div className="built-button">
-                <button type="button" class="built-first-button btn btn-outline-primary">
+                <a href="https://wa.me/917291921804?text=Hii Qubicles"><button type="button" class="built-first-button btn btn-outline-primary">
                   Hire us
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
@@ -43,6 +47,10 @@ const built = () => {
           </div>
         </div>
       </div>
+
+      <Start/>
+   <Work/>
+   <Card/>
     </>
   );
 };

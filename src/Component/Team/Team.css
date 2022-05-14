@@ -1,0 +1,124 @@
+.green-container{
+    max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+  
+
+.border{
+  height: 369px;
+  width: 290px;
+  /* background: transparent; */
+  border-radius: 10px;
+  transition: border 1s;
+  /* position: relative; */
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+.green-card{
+
+    height: 379px;
+    width: 300px;
+    background: grey;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.green-card0{
+
+    background: url('https://img.freepik.com/free-photo/fun-3d-cartoon-teenage-boy_183364-81073.jpg?size=626&ext=jpg&query=3d%20character&position=48&from_view=keyword&ga=GA1.2.1529191995.1650930130') center center no-repeat;
+    background-size: 300px;
+}
+
+.green-card0:hover{
+
+    background: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') left center no-repeat;
+    background-size: 600px;
+}
+
+.border>h2{
+
+    /* opacity: 1; */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  /* opacity: 0; */
+  transition: opacity 1s;
+  font-size: 1.5rem;
+}
+
+.border .fa{
+
+    opacity: 1;
+  transition: opacity 1s;
+}
+
+.green-card1{
+
+    background: url('https://img.freepik.com/free-photo/fun-cartoon-kid-with-rain-gear_183364-81176.jpg?size=626&ext=jpg&query=3d%20character&position=37&from_view=keyword&ga=GA1.2.1529191995.1650930130') center center no-repeat;
+    background-size: 300px;
+}
+
+.green-card1:hover{
+
+    background: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') left center no-repeat;
+    background-size: 600px;
+}
+
+
+.green-card2{
+
+    background: url('https://img.freepik.com/free-photo/fun-3d-illustration-cartoon-kid-with-vr-helmet_183364-81191.jpg?size=626&ext=jpg&query=3d%20character&position=38&from_view=keyword&ga=GA1.2.1529191995.1650930130') center center no-repeat;
+    background-size: 300px;
+}
+
+.green-card2:hover{
+
+    background: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') left center no-repeat;
+    background-size: 600px;
+    color: white;
+}
+
+.green-card3{
+
+    background: url('https://img.freepik.com/free-photo/fun-3d-cartoon-casual-character_183364-80985.jpg?size=626&ext=jpg&query=3d%20character&position=3&from_view=keyword&ga=GA1.2.1529191995.1650930130') center center no-repeat;
+    background-size: 300px;
+}
+
+.green-card3:hover{
+
+    background: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') left center no-repeat;
+    background-size: 600px;
+    color: white;
+}
+
+
+
+.icons{
+
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -47,7 +47,7 @@
 
 
 
-.start-button>button{
+.start-button>a>button{
     margin-top: 2rem;
     height: 3.4rem;
     width: 12rem;

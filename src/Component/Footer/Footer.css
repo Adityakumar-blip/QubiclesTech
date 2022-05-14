@@ -108,7 +108,7 @@ font-family: 'Playfair Display', serif;
 font-size: 4rem;
 }
 
-.footer-image>button{
+.footer-image>a>button{
     margin-top: 1rem;
     border-color: white;
     width: 12rem;
@@ -117,6 +117,6 @@ font-size: 4rem;
     transition:transform 0.2s;
 }
 
-.footer-image>button:hover{
+.footer-image>a>button:hover{
     transform: scale(1.1);
 }
