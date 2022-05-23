@@ -4,6 +4,11 @@ import "./built.css";
 import Start from "../Start/Start";
 import Card from '../Card/Card';
 import Work from '../Work/Work';
+import Workflow from "../Workflow/Workflow";
+import img1 from '../../Assets/head.png'
+
+import Zoom from 'react-reveal/Zoom'
+import  Fade  from "react-reveal/Fade";
 
 const built = () => {
   return (
@@ -13,6 +18,7 @@ const built = () => {
           <div
             className="built-col-first col col-lg-7 col-md-7 col-sm-12"
           >
+                <Fade left>
             <div className="built-subcontainer">
               <div className="built-header">
                 <h2>
@@ -36,19 +42,20 @@ const built = () => {
                 </button></a>
               </div>
             </div>
+                </Fade>
           </div>
           <div className="built-col-second col col-lg-5 col-md-5 col-sm-12">
+            <Fade right>
             <div className="built-image">
-              <img
-                src="https://www.suffescom.com/assets/img/new_suffes_images/saas-personalized-user-experience.webp"
-                alt=""
-              />
+              <img src={img1} />
             </div>
+            </Fade>
           </div>
         </div>
       </div>
 
-      <Start/>
+<Workflow/>
+      {/* <Start/> */}
    <Work/>
    <Card/>
     </>

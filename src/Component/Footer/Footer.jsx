@@ -38,14 +38,14 @@ const Footer = () => {
         </div>
         </div>
 
-        <div className="footer-image-container">
+        {/* <div className="footer-image-container">
           <div className="footer-image">
             <h1>Believe In Us</h1>
             <a href='https://wa.me/917291921804?text=Hii Qubicles'><button type="button" class="footer-button btn btn-outline-primary">
                   Contact us
                 </button></a>
           </div>
-        </div>
+        </div> */}
     </div>
     </>
   )

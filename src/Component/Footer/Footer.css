@@ -1,18 +1,18 @@
 .footer-super-container{
-    position: relative;
     margin: 0;
     padding: 0;
 }
 .footer-main-container{
     width: 100%;
-    position: absolute;
     background-color: #ac79df;
-    height: 90vh;
+    /* height: 90vh; */
     top: 10rem;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 7rem;
+    padding-top: 4rem ;
 }
 
 .footer-options{
@@ -77,14 +77,15 @@
     font-size: 1.5rem;
 }
 
-.footer-image-container{
+/* .footer-image-container{
     position: absolute;
-    /* left: 25%; */
+    background-color: #ad5ffb;
+    left: 25%;
     margin: 0;
     padding: 0 5rem;
     height:20rem;
     width: 100%;
-}
+} */
 
 .footer-image{
     height: 100%;

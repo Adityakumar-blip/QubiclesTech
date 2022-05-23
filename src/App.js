@@ -7,6 +7,7 @@ import Footer from './Component/Footer/Footer.jsx'
 import Services from './Component/Services/Services';
 import Portfolio from './Component/Portfolio/Portfolio';
 import Team from './Component/Team/Team';
+import Quote from './Component/Quote/Quote';
 
 import {BrowserRouter as   Router, Route , Routes} from 'react-router-dom'
 
@@ -21,6 +22,7 @@ function App() {
    <Route path='/portfolio' element={<Portfolio/>} />
    <Route path='/team' element={<Team/>}  />
    </Routes>
+   <Quote/>
    <Footer/>
    </Router>
    </>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Work.css'
 import { Link } from 'react-router-dom'
+import social from '../../Assets/social.jpeg'
 
 
 const Work = () => {
@@ -12,7 +13,7 @@ const Work = () => {
 <section class="cards-wrapper">
 <div class="card-grid-space">
     <div class="num">01</div>
-    <a class="card" href="">
+    <a class="card card1" href="">
       <div>
         <h1>SpeedForce</h1>
         {/* <p>Learn about some of the most common HTML tags…</p> */}
@@ -25,7 +26,7 @@ const Work = () => {
   </div>
   <div class="card-grid-space">
     <div class="num">02</div>
-    <a class="card" href="https://socialpubli.co.in/">
+    <a class="card card2" href="https://socialpubli.co.in/">
       <div>
         <h1>SocialPubli</h1>
         {/* <p>Learn about some of the most common HTML tags…</p> */}
@@ -38,7 +39,7 @@ const Work = () => {
   </div>
   <div class="card-grid-space">
     <div class="num">03</div>
-    <a class="card" href="">
+    <a class="card card3" href="">
       <div>
         <h1>DridSankalp</h1>
         {/* <p>Learn how to use links and images along with file paths…</p> */}
