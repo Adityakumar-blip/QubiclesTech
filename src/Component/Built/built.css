@@ -1,12 +1,35 @@
 
 .built-main-container{
     /* height: 100vh; */
-    margin: 2rem 0 5rem 0;
-    padding: 0 2rem;
+    padding: 0 0rem;
+    background-color: #ad5ffb;
 }
 
 .built-subcontainer{
     padding-top: 3rem;
+}
+
+.build-heading{
+    padding: 2rem 5rem 5rem 2rem;
+}
+
+.build-heading>h2{
+    font-size: 6.6rem;
+    /* letter-spacing: 0.1rem; */
+    font-weight: 600;
+}
+
+.build-heading>h2:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px black ; 
+}
+
+.build-heading>h1{
+    font-size: 15rem;
+    margin-left: -1rem;
+    line-height: 15rem;
+    -webkit-text-stroke: 1px whitesmoke ;
+    color: transparent;
 }
 
 .built-header>h2{
@@ -47,4 +70,16 @@
 
 .built-button>button:hover{
     transform: scale(1.1);
+}
+
+@media (max-width:600px){
+    .build-heading>h1{
+        font-size: 5rem;
+        line-height: 9rem;
+        margin-left: 0;
+    }
+
+    .build-heading>h2{
+        font-size: 6rem;
+    }
 }

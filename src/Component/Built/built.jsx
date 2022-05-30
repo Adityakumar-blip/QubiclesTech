@@ -13,10 +13,10 @@ import  Fade  from "react-reveal/Fade";
 const built = () => {
   return (
     <>
-      <div className="built-main-container">
+      {/* <div className="built-main-container">
         <div className="built-row row m-0">
           <div
-            className="built-col-first col col-lg-7 col-md-7 col-sm-12"
+            className="built-col-first col col-md-7 col-sm-12"
           >
                 <Fade left>
             <div className="built-subcontainer">
@@ -44,7 +44,7 @@ const built = () => {
             </div>
                 </Fade>
           </div>
-          <div className="built-col-second col col-lg-5 col-md-5 col-sm-12">
+          <div className="built-col-second col  col-md-5 col-sm-12">
             <Fade right>
             <div className="built-image">
               <img src={img1} />
@@ -52,7 +52,15 @@ const built = () => {
             </Fade>
           </div>
         </div>
+      </div> */}
+      <div className="built-main-container">
+      <div className="build-heading">
+        <h2>Let's </h2>
+         <h2> Build </h2>
+         <h1>Different.</h1>
       </div>
+      </div>
+      
 
 <Workflow/>
       {/* <Start/> */}

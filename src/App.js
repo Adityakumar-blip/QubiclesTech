@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './Component/Navbar/nav';
+import Nav from './Component/Navbar/Nav';
 import Built from './Component/Built/built';
 import Start from './Component/Start/Start.jsx'
 import Footer from './Component/Footer/Footer.jsx'

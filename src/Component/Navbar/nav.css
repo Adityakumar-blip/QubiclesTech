@@ -1,123 +1,190 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+.nav-wrapper{
+    background-color: #AD5FFB;
+    overflow: hidden;
+}
+
+.navbar li{
     list-style: none;
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body{
-    font-family: 'Playfair Display', serif;
-    
+.navbar li:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
 }
 
-nav{
-    background: #AD5FFB;
-    height: 80px;
+.navbar li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Lora',sans-serif;
+}
+
+.active-link:active{
+    color: white;
+}
+
+.navbar li Link:active{
+    color: red;
+}
+
+.navbar li a:hover{
+    color: black;
+}
+
+.navbar-brand>h3{
+    color: white;
+}
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
     width: 100%;
+    background: #ffff;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 }
 
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 3rem;
-    font-weight: bold;
-    font-family: 'Playfair Display', sans-serif;
+.middle-bar{
+    margin-top: 0px;
+
+}
+
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
 }
 
 
-nav ul{
-    float:right;
-    margin-right: 20px;
+.contact-button{
+    margin-left: 2rem;
+    width: 9rem;
+    border: none;
+    border-radius:40px;
+    color: #fff;
 }
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+.nav-link{
     text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
+.nav-link:hover{
+    color: #000;
+    font-weight: 500;
 }
 
-a.active, a:hover{
-    background:#6423a5;
-    transition: 0.5s;
-    text-decoration: none;
-    color: white;
-}
+@media (max-width:990px){
 
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-@media (max-width:952px){
-    label.logo{
+    .navbar-brand{
         font-size: 30px;
-        padding-left: 50px;
     }
 
-    nav ul li a{
-        font-size: 16px;
+    .main-heading{
+        font-size: 2rem;
+
+    }
+
+    .main-para{
+        font-size: 1rem;
     }
 }
 
-@media (max-width:858px){
-    .checkbtn{
-        display: block;
+@media (max-width:760px){
+
+    .navbar li a{
+        -webkit-text-stroke: 0.5px white;
+        color: transparent;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: left;
     }
 
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #7551c9;
-        top: 80px;
-        left: -100%;
+    .navbar li a:hover{
+        font-size: 3rem;
+        font-weight: 600;
+        color: white;
+    }
+    .navbar-brand{
+        font-size: 10px;
+        width: 2rem;
+        margin-left: 1rem;
+    }
+
+    .nav-wrapper{
+        height: 100%;
+    }
+
+    .navbar-brand>img{
+        margin-left: 0.5rem;
+    }
+    
+
+    .collapse{
         text-align: center;
-        transition: all 0.5s;
+        align-items:center;
+        justify-content: center;
     }
 
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    .logo-cont{
+        padding: 0;
     }
-
-    nav ul li a{
-        font-size: 20px;
-    }
-
-    a:hover, a:active{
-        background:none;
-        color:#dad6dd;
-        
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
+    
+ 
 }
-
-
-
-
-
