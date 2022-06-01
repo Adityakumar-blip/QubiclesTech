@@ -1,7 +1,50 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Quote.css'
 
 const Quote = () => {
+  const [userData, setUserData] = useState({
+    name:"",
+    email:"",
+    number:"",
+    message:"",
+    });
+    
+    let name, value;
+    function postUserData(event) {
+      name = event.target.name;
+      value = event.target.value;
+  
+      setUserData({ ...userData, [name]:value })
+    }
+  
+    // connect to firebase
+    const submitData = async(event) => {
+      event.preventDefault();
+      const {name,
+      email,
+      number,
+      message,} = userData;
+      const res = await fetch(
+        'https://qubicles-62a71-default-rtdb.asia-southeast1.firebasedatabase.app/Contactus.json',{
+          method: "POST",
+          headers:{
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify({
+            name,
+            email,
+            number,
+            message,
+          }),
+        }
+        );
+  
+        if(res) {
+          alert("Data Stored")
+        }else {
+          alert("Please fill the Data")
+        }
+    };
   return (
    <div className="quote">
        <h1>Request a quote</h1>
@@ -19,19 +62,19 @@ const Quote = () => {
     <form class="form" id="form1">
       
       <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        <input name="name" value={userData.name} type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" onChange={postUserData} />
       </p>
       
       <p class="email">
-        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+        <input name="email" value={userData.email} type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" onChange={postUserData} />
       </p>
       
       <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Tell us about your need"></textarea>
+        <textarea name="text" value={userData.message} class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Tell us about your need" onChange={postUserData} ></textarea>
       </p>
       
       
-      <div class="submit">
+      <div class="submit" onClick={submitData} >
         <input type="submit" value="SEND" id="button-blue"/>
         <div class="ease"></div>
       </div>
