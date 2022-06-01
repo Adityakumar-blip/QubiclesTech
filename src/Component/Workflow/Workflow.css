@@ -9,6 +9,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.workflow{
+  margin-top: 2rem;
+}
+
 .workflow>h1{
     margin-left: 3rem;
 }
