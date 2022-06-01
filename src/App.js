@@ -8,6 +8,7 @@ import Services from './Component/Services/Services';
 import Portfolio from './Component/Portfolio/Portfolio';
 import Team from './Component/Team/Team';
 import Quote from './Component/Quote/Quote';
+import Construction from './Component/Construction';
 
 import {BrowserRouter as   Router, Route , Routes} from 'react-router-dom'
 
@@ -15,6 +16,7 @@ function App() {
   return (
    <>
    <Router>
+  <Construction/>
    <Nav/>
    <Routes>
    <Route path='/' element={<Built/>} />
